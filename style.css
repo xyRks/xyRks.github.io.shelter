@@ -245,6 +245,16 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
+
+ 
+
+}
+
+.frends-content-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .frends-content-card {
@@ -255,7 +265,14 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     align-items: center;
     transition: transform 0.45s ease-out;
+    
 }
+
+.frends-content-card:nth-child(1n) {
+    margin-right: 60px;
+    margin-left: 50px;
+}
+
 
 .frends-content-card:hover {
     transform: scale(1.1);
@@ -295,9 +312,16 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
+
+
 .button-slider:hover {
     background-color: #FDDCC4;
     
+}
+
+.button-slider:disabled {
+    border-color: #CDCDCD;
+    color: #CDCDCD;
 }
 
 .button-card {
@@ -642,3 +666,4 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
