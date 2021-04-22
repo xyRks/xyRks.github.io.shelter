@@ -10,9 +10,9 @@ $(document).ready(function() {
     const buttonNext = $('.next');
     const itemsCount = item.lenght;
     
+    
 
-    const itemWidth = (container.width() / slidesToShow) - 20;
-    //  const itemWidth = 270;
+    const itemWidth = (container.width() / slidesToShow) - 35;
     const movePosition = slidesToScroll * itemWidth;
     
         item.each(function (index, item) {
@@ -39,7 +39,6 @@ $(document).ready(function() {
     });
 
     const setPosition = () => {
-
         item.css({
             transform: `translateX(${position}px)`
         });
@@ -47,8 +46,7 @@ $(document).ready(function() {
 
     const checkBtns = () => {
         buttonPrev.prop('disabled', position === 0);
-        buttonNext.prop('disabled', position <= -(itemsCount - slidesToShow) * itemWidth
-        );
+        buttonNext.prop('disabled', position === -4380);
     };
 
     checkBtns()
