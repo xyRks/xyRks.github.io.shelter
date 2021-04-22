@@ -244,7 +244,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+
 
  
 
@@ -255,6 +255,8 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .frends-content-card {
@@ -383,7 +385,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     padding-top: 75px;
-    padding-bottom: 60px;
+
     align-items: center;
     text-align: center;
 }

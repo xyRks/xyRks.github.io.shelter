@@ -11,7 +11,7 @@ $(document).ready(function() {
     const itemsCount = item.lenght;
     
 
-    const itemWidth = (container.width() / slidesToShow) - 10;
+    const itemWidth = (container.width() / slidesToShow) - 20;
     //  const itemWidth = 270;
     const movePosition = slidesToScroll * itemWidth;
     
