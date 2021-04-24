@@ -23,7 +23,7 @@ $(document).ready(function() {
         
 
     buttonPrev.click(function() {
-        const itemLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
         position += movePosition;
 
         setPosition()
