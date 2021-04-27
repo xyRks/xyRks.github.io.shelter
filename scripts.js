@@ -8,6 +8,7 @@ $(document).ready(function() {
     const item  = $('.frends-content-card');
     const buttonPrev = $('.prev');
     const buttonNext = $('.next');
+    const buttonReset= $('.reset');
     const itemsCount = item.lenght;
     
     
@@ -50,4 +51,13 @@ $(document).ready(function() {
     };
 
     checkBtns()
+
+
+    buttonReset.click(function() {
+        item.css({
+            transform: `translateX(0px)`
+        });
+        position = 0
+        checkBtns()
+    });
 });
